@@ -1,0 +1,25 @@
+.not-found {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+
+    h1 {
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 8px 20px;
+        background: #ffffff;
+        color: #1d2445;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+}

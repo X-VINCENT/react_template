@@ -1,0 +1,42 @@
+$nav-bar-height: 100px;
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: $nav-bar-height;
+    align-items: center;
+    z-index: 900;
+}
+
+.list {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.items {
+    padding: 0 20px;
+
+    &::after {
+        content: "";
+        border-bottom: 1px solid #ffffff;
+        width: 100%;
+        display: block;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+    }
+
+    &:hover::after {
+        display: block;
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
